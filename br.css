@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+#felulet{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #777;
+}
+
+.textbox{
+    border: 0;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    height: 30px;
+    width: 300px;
+    background-color: #bbbbbb;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#gombok{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#visszadiv{
+    width: fit-content;
+}
+
+
+#gombdiv{
+    width: fit-content;
+}
+
+
+.gomb{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #bbbbbb;
+    height: 30px;
+    cursor: pointer;
+
+}

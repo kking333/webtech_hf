@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ hírek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkload()">
+    <div id="dashboard" style="display: none;">
+        <div class="dashboardbuttonsdiv"><button type="button" class="dashboardbuttons" id="dashhirek" onclick="window.location='index.html'">HÍREK</button></div>
+        <div class="dashboardbuttonsdiv"><button type="button" class="dashboardbuttons" id="dashkereses" onclick="window.location='kereses.html'">KERESÉS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashbeallitasokdiv"><button type="button" class="dashboardbuttons" id="dashbeallitasok" onclick="window.location='beallitasok.html'">BEÁLLÍTÁSOK</button></div>
+        <div class="dashboardbuttonsdiv" id="cikkiras"><button type="button" class="dashboardbuttons" id="dashcikkiras" onclick="window.location='iras.html'">CIKK ÍRÁS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashbejelentkezesdiv"><button type="button" class="dashboardbuttons" id="dashbejelentkezes" onclick="window.location='regisztracio-bejelentkezes.html'">BEJELENTKEZÉS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashregisztraciodiv"><button type="button" class="dashboardbuttons" id="dashregisztracio" onclick="window.location='regisztracio-bejelentkezes.html'">REGISZTRÁCIÓ</button></div>
+
+    </div>
+    
+    <div id="topbar">
+        <div id="bf" class="buttondiv">
+            <button type="button" id="dashbutton" onclick="dashboard()">&#8801</button>
+        </div>
+        <div id="kf" class="buttondiv">
+            <div class="mainbuttondiv"><button type="button" id="hirek", class="buttons whitebutton" onclick="window.location='index.html'">HÍREK</button></div>
+            <div class="mainbuttondiv"><button type="button" id="kereses", class="buttons blackbutton" onclick="window.location='kereses.html'">KERESÉS</button></div>
+        </div>
+        <div id="jf" class="buttondiv">
+            <div class="rightbuttondiv"><button type="button" id="bejelentkezes", class="buttons whitebutton" onclick="window.location='regisztracio-bejelentkezes.html'">BEJELENTKEZÉS</button></div>
+            <div class="rightbuttondiv"><button type="button" id="regisztracio", class="buttons blackbutton" onclick="window.location='regisztracio-bejelentkezes.html'">REGISZTRÁCIÓ</button></div>
+        </div>
+        <div id="jf2" class="buttondiv">
+            <div class="rightbuttondiv"><button type="button" id="kijelentkezes" onclick="deletetoken()">KIJELENTKEZÉS</button></div>
+        </div>
+    </div>
+    
+    <div id="eribigomg">
+        <div id="bottombar">
+            <div class="bottomdiv" id="beallitasok">
+                <input type="text" placeholder="Név változtatás" class="beallitasoktext" id="ujnev">
+                <button class="beallitasokgomb" id="nevmentes" onclick="nevvaltoz()">Mentés</button>
+                <input type="text" placeholder="Jelszó változtatás" class="beallitasoktext" id="ujjelszo">
+                <button class="beallitasokgomb" id="jelszomentes" onclick="jelszovaltoz()">Mentés</button>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

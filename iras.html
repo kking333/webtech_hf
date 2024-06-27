@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ hírek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkload()">
+    <div id="dashboard" style="display: none;">
+        <div class="dashboardbuttonsdiv"><button type="button" class="dashboardbuttons" id="dashhirek" onclick="window.location='index.html'">HÍREK</button></div>
+        <div class="dashboardbuttonsdiv"><button type="button" class="dashboardbuttons" id="dashkereses" onclick="window.location='kereses.html'">KERESÉS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashbeallitasokdiv"><button type="button" class="dashboardbuttons" id="dashbeallitasok" onclick="window.location='beallitasok.html'">BEÁLLÍTÁSOK</button></div>
+        <div class="dashboardbuttonsdiv" id="cikkiras"><button type="button" class="dashboardbuttons" id="dashcikkiras" onclick="window.location='iras.html'">CIKK ÍRÁS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashbejelentkezesdiv"><button type="button" class="dashboardbuttons" id="dashbejelentkezes" onclick="window.location='regisztracio-bejelentkezes.html'">BEJELENTKEZÉS</button></div>
+        <div class="dashboardbuttonsdiv" id="dashregisztraciodiv"><button type="button" class="dashboardbuttons" id="dashregisztracio" onclick="window.location='regisztracio-bejelentkezes.html'">REGISZTRÁCIÓ</button></div>
+    </div>
+    
+    <div id="topbar">
+        <div id="bf" class="buttondiv">
+            <button type="button" id="dashbutton" onclick="dashboard()">&#8801</button>
+        </div>
+        <div id="kf" class="buttondiv">
+            <div class="mainbuttondiv"><button type="button" id="hirek", class="buttons whitebutton" onclick="window.location='index.html'">HÍREK</button></div>
+            <div class="mainbuttondiv"><button type="button" id="kereses", class="buttons blackbutton" onclick="window.location='kereses.html'">KERESÉS</button></div>
+        </div>
+        <div id="jf" class="buttondiv">
+            <div class="rightbuttondiv"><button type="button" id="bejelentkezes", class="buttons whitebutton" onclick="window.location='regisztracio-bejelentkezes.html'">BEJELENTKEZÉS</button></div>
+            <div class="rightbuttondiv"><button type="button" id="regisztracio", class="buttons blackbutton" onclick="window.location='regisztracio-bejelentkezes.html'">REGISZTRÁCIÓ</button></div>
+        </div>
+        <div id="jf2" class="buttondiv">
+            <div class="rightbuttondiv"><button type="button" id="kijelentkezes" onclick="deletetoken()">KIJELENTKEZÉS</button></div>
+        </div>
+    </div>
+
+    <div id="betoltesdiv" style="display: none;">
+        <div id="betolteslista">
+
+        </div>
+        <div id="betoltesgombokdiv">
+            <button type="button" id="betoltesvissza" class="w2gombok" onclick="betoltestorles(); betoltesmegjelenites()">Vissza</button>
+        </div>
+
+    </div>
+    
+    <div id="eribigomg">
+        <div id="bottombar">
+            <div class="bottomdiv" id="thumbnail">
+                <input type="file" id="thumbnailfile">
+                <img id="thumbnailpreview" src="#">
+                <input type="text" id="w2cim" placeholder="Cím">
+                <input type="text" id="w2tag" placeholder="Tagek">
+
+            </div>
+            <div class="bottomdiv" id="hirszerk"><textarea name="szovegresz" id="szovegszerk"></textarea></div>
+            <div id="hirablak">
+                <button class="w2gombok" id="w2mentes" onclick="mentes()">Mentés</button>
+                <button class="w2gombok" id="w2kozzetetel" onclick="kozzetetel()">Közzététel</button>
+                <button class="w2gombok" id="w2betoltes" onclick="betoltesmegjelenites(); betolteslekeres()">Betöltés</button>
+                <div class="dummydiv" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

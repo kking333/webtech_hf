@@ -1,0 +1,496 @@
+body{
+    
+    padding: 0;
+    margin: 0;
+    background-color:#f0eae6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+#dashboard{
+    position: fixed;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+    margin-top: 110px;
+    height: 100%;
+    width: 250px;
+    background-image: linear-gradient(to bottom, white,80%, #111);
+    padding-top: 10px;
+}
+
+
+.dashboardbuttonsdiv{
+    width: 200px;
+    height: 70px;
+    align-content: center;
+}
+
+.dashboardbuttons{
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    border-right-color: #111;
+    border-right: 10px solid;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+#eribigomg{
+    
+    padding-top: 110px;
+}
+
+#topbar{
+    display: grid;
+    position: fixed;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    background-color: #cccccc;
+    width: 100%;
+}
+
+#bf{
+    margin-left: 30px;
+    justify-self: flex-start;
+    width: 110px;
+    height: 110px;
+    align-content: center;
+    text-align: center;
+}
+
+#kf{
+    justify-self: center;
+    display: flex;
+    width: 400px;
+    height: 110px;
+    justify-content: space-between;
+}
+
+#jf{
+    margin-right: 30px;
+    justify-self:flex-end;
+    display: flex;
+    width: 260px;
+    height:110px;
+    justify-content: space-between;
+}
+
+#jf2{
+    margin-right: 30px;
+    justify-self:flex-end;
+    display: none;
+    width: 260px;
+    height:110px;
+    justify-content: space-between;
+}
+
+.whitebutton{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(to right, white, 60%, #888888);
+    
+}
+
+.blackbutton{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(to right, #888888, 40%, black);
+}
+
+.mainbuttondiv{
+    width: 200px;
+    height: 110px;
+
+}
+.rightbuttondiv{
+    width: 130px;
+    height: 90px;
+}
+#kijelentkezes{
+    background-color: red;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 40px;
+    height: 50px;
+    width: 260px;
+    font-size: 14px;
+    color: black;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,black, 10%,#888, 30%, white, 70%, #888888, 90%,black);
+}
+
+.buttons{
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+
+}
+#dashbutton{
+    width: 75px;
+    height: 75px;
+    font-size: 70px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+#hirek{
+    height: 110px;
+    width: 200px;
+    font-size: 30px;
+    color: black;
+}
+
+#kereses{
+    height: 110px;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+}
+
+#bejelentkezes{
+    margin-top: 40px;
+
+    height: 50px;
+    width: 130px;
+    font-size: 14px;
+    color: black;
+}
+
+#regisztracio{
+    margin-top: 40px;
+
+    height: 50px;
+    width: 130px;
+    font-size: 14px;
+    color: white;
+}
+
+#bottombar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.bottomdiv{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+
+}
+
+#nev{
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+    background-color: #a69c9a;
+}
+
+.hir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    background-image: linear-gradient(150deg, #333333, 20% , #cccccc , 80%, #333333);
+
+}
+
+.hir img{
+    max-width: 760px;
+    width: 100%;
+    height: auto;
+}
+
+#hircim {
+    align-self: flex-start;
+    font-size: 30px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+   
+}
+
+
+#w2kereses{
+    background-color: #a69c9a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.searchbardiv{
+    max-width: 330px;
+    width: 100%;
+}
+
+.searchbar{
+    border: 0;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.searchbuttondiv{
+    width: 100px;
+}
+
+.searchbutton{
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+
+#thumbnail{
+    background-color: #a69c9a;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#thumbnailfile{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#thumbnailpreview{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#w2cim{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+#w2tag{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+#hirszerk{
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #a69c9a;
+}
+
+
+
+#szovegszerk{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 760px;
+}
+
+#kommentirasdiv{
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#kommentbutton{
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#kommentiras{
+    margin: 20px;
+    height: 70px;
+    width: 100%;
+    max-width: 760px;
+}
+
+#hirablak{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 370px;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#betoltesdiv{
+    background-color: #cccccc;
+    width: 400px;
+    height: fit-content;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.betoltescimek{
+    cursor: pointer;
+
+}
+#betolteslista{
+    width: 380px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cikkepdiv{
+    background: transparent;
+}
+
+#dashbeallitasokdiv{
+    display: none;
+}
+
+#cikkep{
+    border-radius: 10px;
+}
+
+#cikkcim{
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+#cikkszoveg{
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    max-width: 780px;
+}
+
+#kommentlist{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.komment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    width: 100%;
+    max-width: 780px;
+    border-left: 3px solid black;
+    border-radius: 5px;
+
+}
+
+
+
+#kommentelo{
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#kommentelokommentje{
+    margin-left: 5px;
+}
+
+
+
+#betoltesgombokdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: fit-content;
+}
+
+
+
+.w2gombok{
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+#w2kozzetetel{
+    display: none;
+}
+
+#beallitasok{
+    height: fit-content;
+    background-color: #a69c9a;
+    display: flex;
+    flex-direction: column;
+    padding-top:20px;
+    
+}
+
+.beallitasoktext{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.beallitasokgomb{
+    height: 40px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: #333;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+    #topbar{
+        grid-template-columns: auto 0px 0px ;
+    }
+
+    .mainbuttondiv{
+        display: none;
+    }
+    .rightbuttondiv{
+        display: none;
+    }
+}
